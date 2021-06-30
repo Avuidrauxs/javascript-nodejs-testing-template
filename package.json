@@ -4,7 +4,7 @@
   "description": "A repo to exhibit examples of how to write tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha src/index.test.js"
   },
   "repository": {
     "type": "git",

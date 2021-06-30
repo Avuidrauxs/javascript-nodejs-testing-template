@@ -1,13 +1,13 @@
 function gradeResults(results) {
   if(!Array.isArray(results) || validateResults(results)) {
-      return 'Please enter an array with scores of data type number'
+      return 'Please enter an array with scores of data type number between 0 - 100'
   }
   const grades = results.map(result => gradeResult(result))
   return grades
 }
 
 function validateResults(results) {
-    const found = results.find(result => typeof result !== 'number')
+    const found = results.find(result => typeof result !== 'number' || (result > 100 || result < 0) )
     if (found) {
         return true
     }
@@ -32,5 +32,3 @@ function gradeResult(result) {
 module.exports = {
     gradeResults
 }
-
-console.log(gradeResults([56,78,90, 'hjhgjgjh']))
