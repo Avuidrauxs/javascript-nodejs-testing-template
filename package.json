@@ -1,0 +1,24 @@
+{
+  "name": "javascript-nodejs-testing-template",
+  "version": "1.0.0",
+  "description": "A repo to exhibit examples of how to write tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avuidrauxs/javascript-nodejs-testing-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avuidrauxs/javascript-nodejs-testing-template/issues"
+  },
+  "homepage": "https://github.com/Avuidrauxs/javascript-nodejs-testing-template#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.1"
+  }
+}
