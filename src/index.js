@@ -7,7 +7,7 @@ function gradeResults(results) {
 }
 
 function validateResults(results) {
-    const found = results.find(result => typeof result !== 'number' || (result > 100 || result < 0) )
+    const found = results.find(result => typeof result !== 'number' || (result > 100 || result < 0) || !Number.isInteger(result) )
     if (found) {
         return true
     }
@@ -30,5 +30,7 @@ function gradeResult(result) {
 
 
 module.exports = {
-    gradeResults
+    gradeResults,
+    gradeResult,
+    validateResults
 }
